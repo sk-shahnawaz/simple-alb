@@ -8,7 +8,6 @@ This repository contains implementation of John Crickett's coding challenge:
 - .NET 8 LTS
 - ASP.NET Core 8 Web API
 - C# 12.0
-- Docker (Engine v 25.0.1, Desktop v 4.21.0)
 
 ### Other open-source libraries used:
 
@@ -91,3 +90,7 @@ from then onwards, any HTTP `GET` request made to load balancer on path `/*` wil
 Deregister application to load balancer by running the following URL: http://localhost:1112/deregister-self
 
 *In this way, multiple applications can be launched on different ports, registered to load balancer. Traffic can be distributed among them.*
+
+### To-do
+
+- Dockerization
