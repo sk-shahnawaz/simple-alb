@@ -69,7 +69,7 @@ Run the following command to launch the load balancer on port `1111`:
 dotnet "./bin/Debug/net8.0/LoadBalancer.dll" --urls="http://+:1111"
 ```
 
-Ensure load balancer is running by running the following URL: http://localhost:1111/alb-health
+Ensure load balancer is running by visiting the following URL: http://localhost:1111/alb-health
 
 *Running application(s)*
 
@@ -80,9 +80,9 @@ Run the following command to launch the application on port `1112`:
 dotnet "./bin/Debug/net8.0/Application.dll" --urls="http://+:1112"
 ```
 
-Ensure application is running by running the following visiting following URL: http://localhost:1112/<Application__HealthCheckPath>
+Ensure application is running by visiting following URL: http://localhost:1112/<Application__HealthCheckPath>
 
-Register application to load balancer by running the visiting following URL: http://localhost:1112/register-self
+Register application to load balancer by visiting following URL: http://localhost:1112/register-self
 
 After running the above command, application will get registered to load balancer as a downstream application,
 from then onwards, any HTTP `GET` request made to load balancer on path `/*` will be re-directed to application.
